@@ -1,0 +1,35 @@
+{
+    "name": "sms-perso",
+    "version": "1.0.0",
+    "description": "Service d'intégration interne d'envoi de SMS",
+    "main": "index.js",
+    "scripts": {
+      "serve": "netlify-lambda serve funcs -c webpack.functions.js",
+      "build": "netlify-lambda build funcs -c webpack.functions.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/mendoc/netlify-functions.git"
+    },
+    "keywords": [
+      "Netlify",
+      "functions",
+      "firestore"
+    ],
+    "author": "Dimitri ONGOUA",
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/mendoc/sms-perso/issues"
+    },
+    "homepage": "https://github.com/mendoc/sms-perso#readme",
+    "dependencies": {
+      "firebase-admin": "^9.0.0",
+      "nodemailer": "^6.4.11",
+      "uuid": "^8.3.0"
+    },
+    "devDependencies": {
+      "dotenv": "^8.2.0",
+      "netlify-lambda": "^2.0.1",
+      "webpack-node-externals": "^2.5.1"
+    }
+  }
